@@ -26,12 +26,15 @@ services.</p>
 <h2>1. Who we are</h2>
 <p>Second Look is operated by Siddhant Bajaj, based in New York, USA.</p>
 <h2>2. Information we collect</h2>
-<p><strong>Account information.</strong> You sign in with Sign in with Apple. We receive
-the email address Apple provides, which may be Apple's private relay address,
-and store it with your account. We use it for account access and important
-messages about your account, and it is deleted when you delete your account.
-We do not send marketing emails without your separate consent. Accounts
-created before Sign in with Apple may use an email address and password.</p>
+<p><strong>Account information.</strong> You sign in with Sign in with Apple
+or with your email address. With Apple, we receive the email address Apple
+provides, which may be Apple's private relay address. With email, we send a
+6-digit code to the address you enter, and your account is created only once
+you enter that code. We don't accept sign-ups from known disposable email
+services. Either way, we store the email address with your account. We use it
+for account access and important messages about your account, and it is
+deleted when you delete your account. We do not send marketing emails without
+your separate consent. Some accounts created earlier also have a password.</p>
 <p><strong>Onboarding answers.</strong> When you start using the app, we ask three short
 questions: whether you share outfit photos with friends, whether you wish for
 a second look before leaving, and where you dress up for most. Your answers
@@ -144,6 +147,8 @@ other device data.</p>
 <li><strong>Supabase</strong> (our database and backend provider) — stores your account
   data, scan descriptions and feedback, and usage records, protected so that
   only you can access your own data.</li>
+<li><strong>Our email provider</strong> receives your email address only to
+  send you sign-in codes, if you sign in with email.</li>
 <li><strong>Apple</strong> and <strong>RevenueCat</strong> — handle purchases, subscriptions, and
   billing for the app. RevenueCat receives a device identifier and
   subscription event data to do this.</li>
